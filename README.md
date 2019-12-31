@@ -4,6 +4,7 @@ Application to solve 8 puzzle with AI algorithms : BFS,A*,RBFS
 ##Getting Started
 If you intrested for this project or you need this for your homework you can use it . 
 Just download the zip or clone it on you machine and here you go ;)
+
 ###Requirments
 First thing first , You need to install java in your Machine no matter wich OS .
 
@@ -69,6 +70,7 @@ BFS bfs = new BFS(root);
 bfs.solve().printState();
 ```
 solve() Method has PuzzleNode return type , so we can use returned object to print path and other stuff . This method is same in all three algorithms
+
 ###A-star
 For A-star and RBFS you need to create another Heuristic object that mode value must be 0 or 1 , If mode set to -1 this algorithm will work as BFS
 ```
