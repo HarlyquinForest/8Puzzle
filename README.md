@@ -53,7 +53,7 @@ Heuristic heuristic = new Heuristic(goal ,0);
 ### Step-4
 Make an Object form PuzzleNode class . That would be your starting node
 ```
-PuzzleNode root = new PuzzleNode(s, heuristic);
+PuzzleNode root = new PuzzleNode(start, heuristic);
 root.printState(); // print puzzle state , Depth , F , Heuristic and path
 ```
 
