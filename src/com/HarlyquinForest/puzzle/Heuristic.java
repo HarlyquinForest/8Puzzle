@@ -44,6 +44,7 @@ public class Heuristic
 
     private int Manhattan(int[] a)
     {
+	// I will change this method on another branch , to see if it's working or not 
         int move = 0 ;
         int moves = 0 ;
         for(int i = 0 ; i <  a.length ; i++)
