@@ -91,11 +91,11 @@ rbfs.solve().printState();
 
 ## Built With
 
-*Java
-*A lot of Coffee
-*Keyboard
-*Intellij Idea
-*and of Course StackOverFlow
+* Java
+* A lot of Coffee
+* Keyboard
+* Intellij Idea
+* and of Course StackOverFlow
 
 Thanks for visiting us :)
 
