@@ -9,7 +9,7 @@ First thing first , You need to install java in your Machine no matter wich OS .
 
 You can find installation guide [here](https://lmgtfy.com/?q=how+to+install+java+)
 
-And you have to know some basic thing about java and OPP (Object-oriented programming) . In case you don't [here]("https://lmgtfy.com/?q=java+tutorial" target="_blank") is the link for toturials ;)
+And you have to know some basic thing about java and OPP (Object-oriented programming) . In case you don't [here](https://lmgtfy.com/?q=java+tutorial) is the link for toturials ;)
 
 
 ##Uage
