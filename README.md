@@ -42,9 +42,9 @@ int[] goal  = {1,2,3,4,5,6,7,8,0};
 Make an object from Heuristic class , pass goal array and heuristic mode as arguments for costructor
 There is three state for mode :
 
-	*  0 = Bad Placed Heuristic
-	*  1 = Manattan Heuristic
-	* -1 = no Heuristic (Default mode)
+* 0 = Bad Placed Heuristic
+* 1 = Manattan Heuristic
+*-1 = no Heuristic (Default mode)
 
 ```
 Heuristic heuristic = new Heuristic(goal ,0);
