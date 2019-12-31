@@ -75,8 +75,8 @@ solve() Method has PuzzleNode return type , so we can use returned object to pri
 For A-star and RBFS you need to create another Heuristic object that mode value must be 0 or 1 , If mode set to -1 this algorithm will work as BFS
 ```
 heuristic = new Heuristic(goal ,1); // assign new object for heuristic 
-root = new PuzzleNode(s, heuristic);
-Astar astar = new Astar(start);
+root = new PuzzleNode(start, heuristic);
+Astar astar = new Astar(root);
 astar.solve().printState();
 ```
 
@@ -84,8 +84,8 @@ astar.solve().printState();
 For this algorithm heuristic must be 0 or 1 unless it won't work !!!!!
 ```
 heuristic = new Heuristic(goal ,1); // assign new object for heuristic 
-root = new PuzzleNode(s, heuristic);
-RBFS rbfs = new Astar(start);
+root = new PuzzleNode(start, heuristic);
+RBFS rbfs = new Astar(root);
 rbfs.solve().printState();
 ```
 
