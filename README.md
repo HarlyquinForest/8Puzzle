@@ -44,7 +44,7 @@ There is three state for mode :
 
 * 0 = Bad Placed Heuristic
 * 1 = Manattan Heuristic
-*-1 = no Heuristic (Default mode)
+* -1 = no Heuristic (Default mode)
 
 ```
 Heuristic heuristic = new Heuristic(goal ,0);
