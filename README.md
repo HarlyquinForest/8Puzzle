@@ -1,30 +1,33 @@
-<h1>8 Puzzle Implementation</h1>
-<p>8 Puzzle solver in java</p>
+#8 Puzzle Implementation
+Application to solve 8 puzzle with AI algorithms : BFS,A*,RBFS
 
-<h3>Getting Started</h3>
+##Getting Started
 <p>
 If you intrested for this project or you need this for your homework you can use it . 
 Just download the zip or clone it on you machine and here you go ;)
-<h4>Requirments</h4>
-First thing first , You need to install java in your Machine no matter wich OS .  
+###Requirments
+First thing first , You need to install java in your Machine no matter wich OS .
 
-You can find installation guide <a href="https://lmgtfy.com/?q=how+to+install+java+" >here</a>
+You can find installation guide <a href="https://lmgtfy.com/?q=how+to+install+java+" target="_blank">here</a>
 </p>
 <p>
-And you have to know some basic thing about java and OPP (Object Oriented Programming) . In case you don't <a href="https://lmgtfy.com/?q=java+tutorial">here</a> is the link for toturials ;)
+And you have to know some basic thing about java and OPP (Object Oriented Programming) . In case you don't <a href="https://lmgtfy.com/?q=java+tutorial" target="_blank">here</a> is the link for toturials ;)
 
 </p>
 
 
-<h4>Installing</h4>
-<p>
-Just clone it , or download the jar from release page 
-</p>
+##Uage
 
-<h4>Usage(How to use it)</h4>
-<p>
+You have two options here , Download library or executable application 
+
+###Execute
+Execute 8PuzzleSolver.jar 
+```
+java -jar 8PuzzleSolver.jar
+```
+
+###How to use library
 There are three algorithm you can solve your puzzle with them 
-</p>
 
 <h5>Step-1</h5>
 <p>import package where your main method is</p>
