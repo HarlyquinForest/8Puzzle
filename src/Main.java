@@ -13,20 +13,16 @@ public class Main
         if(input.equals("1"))
         {
             int[] init = {1,2,3,7,4,8,0,6,5};
-            int[] goal   = {1,2,3,4,5,6,7,8,0};
+            int[] goal = {1,2,3,4,5,6,7,8,0};
             letsGo(init, goal);
         }
         else if(input.equals("2"))
         {
             int[] init = new int[9];
-            int[] goal = new int[9];
+            int[] goal = {1,2,3,4,5,6,7,8,0};
             System.out.println("Enter Puzzle:");
             for(int i= 0 ; i < 9 ; i++)
                 init[i] = sc.nextInt();
-            sc.nextLine();
-            System.out.println("Enter Goal:");
-            for(int i= 0 ; i < 9 ; i++)
-                goal[i] = sc.nextInt();
             sc.nextLine();
             letsGo(init , goal);
         }
@@ -56,6 +52,7 @@ public class Main
                 input = sc.nextLine();
                 heuristic = chooseHeuristic(input , goal);
                 start = new PuzzleNode(inital , heuristic);
+                start.printState();
                 Astar astar = new Astar(start);
                 System.out.println("\n---------- A-star ----------");
                 astar.solve().printState();
@@ -65,6 +62,7 @@ public class Main
                 input = sc.nextLine();
                 heuristic = chooseHeuristic(input , goal);
                 start = new PuzzleNode(inital , heuristic);
+                start.printState();
                 RBFS rbfs = new RBFS(start);
                 System.out.println("\n---------- RBFS ----------");
                 rbfs.solve().printState();
