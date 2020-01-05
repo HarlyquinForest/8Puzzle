@@ -9,7 +9,7 @@ public class RBFS
     private PuzzleNode root ;
     private Stack<SortedStack> stack ;
     private PuzzleNode[] result ;
-    private int index ;
+    private long index ;
 
     public RBFS(PuzzleNode r)
     {
