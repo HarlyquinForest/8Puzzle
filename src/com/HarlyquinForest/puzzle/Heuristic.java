@@ -44,102 +44,24 @@ public class Heuristic
 
     private int Manhattan(int[] a)
     {
-	// I will change this method on another branch , to see if it's working or not 
-        int move = 0 ;
-        int moves = 0 ;
-        for(int i = 0 ; i <  a.length ; i++)
+	// I will change this method on another branch , to see if it's working or not
+        //int[][] temp = {{a[0],a[1],a[2]},{a[3],a[4],a[5]},{a[6],a[7],a[8]}};
+        int sum = 0 ;
+        for(int i = 0 ; i  < 9; i++)
         {
-            if(a[i]-1 != i && a[i] != 0 )
-            {
-                switch(a[i])
-                {
-                    case 1 :
-                        if(i == 1 || i == 3)
-                            move = 1;
-                        else if(i == 2 || i == 4 || i == 6 )
-                            move = 2 ;
-                        else if (i == 5 || i == 7 )
-                            move = 3;
-                        else if (i == 8)
-                            move = 4;
-                        break;
-                    case 2 :
-                        if(i == 0 || i == 2 || i == 4)
-                            move = 1;
-                        else if(i == 3 || i == 5 || i == 7)
-                            move = 2 ;
-                        else if ( i == 6 || i == 8 )
-                            move = 3;
-                        break;
-                    case 3 :
-                        if(i == 1 || i == 5)
-                            move = 1;
-                        else if( i== 0 || i == 4 || i == 8)
-                            move = 2 ;
-                        else if ( i == 7 || i == 3   )
-                            move = 3;
-                        else if ( i == 6 )
-                            move = 4;
-                        break;
-                    case 4 :
-                        if(i == 0 || i == 4 || i == 6)
-                            move = 1;
-                        else if( i == 1 || i == 5 || i == 7)
-                            move = 2 ;
-                        else if ( i == 8 || i == 2 )
-                            move = 3;
-                        break;
-                    case 5 :
-                        if( i == 1 || i == 7 || i == 5 || i == 3)
-                            move = 1;
-                        else if( i == 0 || i == 2 || i == 6 || i == 8)
-                            move = 2 ;
-                        break;
-                    case 6 :
-                        if( i == 2 || i == 8 || i == 4 )
-                            move = 1;
-                        else if( i == 1 || i == 7 || i == 3)
-                            move = 2 ;
-                        else if( i == 0 || i == 6 )
-                            move = 3 ;
-                        break;
-                    case 7 :
-                        if( i == 3 || i == 7)
-                            move = 1;
-                        else if( i == 0 || i == 4 || i == 8)
-                            move = 2 ;
-                        else if( i == 1 || i == 5  )
-                            move = 3 ;
-                        else if (i == 2)
-                            move = 4;
-                        break;
-                    case 8 :
-                        if( i == 4 || i == 8 || i == 6 )
-                            move = 1;
-                        else if( i == 1 || i == 3 || i == 5 )
-                            move = 2 ;
-                        else if( i == 0 || i == 2  )
-                            move = 3 ;
-                        break;
-
-
-                }
-                moves +=move;
-            }
-            else if(a[i] == 0 && i != 8)
-            {
-                if(i == 5 || i == 7 )
-                    move = 1 ;
-                else if(i == 6 || i == 4 || i == 2)
-                    move = 2;
-                else if (i == 3 || i == 1 )
-                    move = 3;
-                else if (i == 0 )
-                    move = 4 ;
-                moves +=move;
-            }
+            int d = Math.abs(index(a,i) - index(GOAL , i ));
+            sum += Math.abs((d / 3)+(d%3));
         }
-        return moves ;
+        return sum ;
+    }
+
+    private int index(int[] a , int n)
+    {
+        int i;
+        for(i = 0 ; i < a.length ; i++ )
+            if(a[i] == n)
+                return i ;
+        return i ;
     }
 
     public int[] getGOAL() {
